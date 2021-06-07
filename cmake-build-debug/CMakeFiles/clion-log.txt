@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\rakun\CLionProjects\LxForBigAdd
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug

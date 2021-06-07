@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\LxForBigAdd.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\LxForBigAdd.dir/objects.a @CMakeFiles\LxForBigAdd.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\LxForBigAdd.dir/objects.a -Wl,--no-whole-archive -o LxForBigAdd.exe -Wl,--out-implib,libLxForBigAdd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LxForBigAdd.dir\linklibs.rsp

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.h
+
+C:/Users/rakun/CLionProjects/LxForBigAdd/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+detectWord.h
+C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.h
+
