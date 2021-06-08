@@ -31,8 +31,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
             continue;
         }
         if (line[i] == '\"' && *inString == 0){
-            word[i-size] = '\"';
-            word[i-size+1] = '\0';
+            word[i-size] = '\0';
             lxFile = fopen(fileName, "a");
             fprintf(lxFile, "%s", "StringConstant ");
             fprintf(lxFile, "%s\n", word);
@@ -52,6 +51,11 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
         *inLoop = loopChecker(*inLoop, line[i], line, lineNum, fileName);
 
 
+
+
+        // WORD CHECKER
+
+
         if (line[i] == ' ' || line[i] == '.' || line[i] == '\n' || line[i] == ',' || line[i] == '\t' ) {
             word[i - size] = '\0';
             for (int j = 0; j < strlen(word); ++j) {
@@ -60,7 +64,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
                     printf("%d\n", lineNum);
                     printf("%s\n", "The line: ");
                     printf("%s", line);
-                    printf("%s\n", "And the first word detected is: ");
+                    printf("%s\n", "And the detected word is: ");
                     printf("%s\n\n", word);
                     break;
                 }
@@ -94,8 +98,6 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
             word[i - size] = line[i];
             word[i - size+1] = '\0';
             if (checkKeyword(word, fileName)) {
-
-
                 if (isalpha(word[0])) {
                     lxFile = fopen(fileName, "a");
                     fprintf(lxFile, "%s", "Identifier ");
@@ -129,7 +131,7 @@ int stringChecker(int inString, char line[], int point, int lineNum){
     if (inString == 0){
         // Currently not in string but string opener detected.
         if (point != 0 && line[point-1] != ' ' && line[point-1] != '\"'){
-            printf("%s", "UNACCEPTED CHAR DETECTED IN IDENTIFIER NAME at line: ");
+            printf("%s", "UNACCEPTED CHAR DETECTED at line: ");
             printf("%d\n", lineNum);
             printf("%s\n", "The line: ");
             printf("%s\n",line);
