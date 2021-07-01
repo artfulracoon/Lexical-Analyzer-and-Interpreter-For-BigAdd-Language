@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LxForBigAdd.dir/checkKeyword.c.obj"
   "CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
+  "CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
   "CMakeFiles/LxForBigAdd.dir/main.c.obj"
   "LxForBigAdd.exe"
   "LxForBigAdd.exe.manifest"

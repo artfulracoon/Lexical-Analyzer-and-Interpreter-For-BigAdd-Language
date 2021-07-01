@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 #include "checkKeyword.h"
 
@@ -68,7 +69,10 @@ if (!trueDigits(word)) {
 int trueDigits(char digit[]) { // returns 0 if word is actually a valid digit, else return 1
 
     if (strlen(digit) > 100){
-        return 1;
+        printf("%s", "DIGIT LENGTH EXCEEDS 100 LIMIT.\n");
+        printf("Press enter to exit...\n");
+        getchar();
+        exit(1);
     }
 
     if (digit[0] == '-') {

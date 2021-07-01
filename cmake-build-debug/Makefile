@@ -195,6 +195,33 @@ detectWord.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/detectWord.c.s
 .PHONY : detectWord.c.s
 
+interpreter.obj: interpreter.c.obj
+
+.PHONY : interpreter.obj
+
+# target to build an object file
+interpreter.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/interpreter.c.obj
+.PHONY : interpreter.c.obj
+
+interpreter.i: interpreter.c.i
+
+.PHONY : interpreter.i
+
+# target to preprocess a source file
+interpreter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/interpreter.c.i
+.PHONY : interpreter.c.i
+
+interpreter.s: interpreter.c.s
+
+.PHONY : interpreter.s
+
+# target to generate assembly for a file
+interpreter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/interpreter.c.s
+.PHONY : interpreter.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -237,6 +264,9 @@ help:
 	@echo ... detectWord.obj
 	@echo ... detectWord.i
 	@echo ... detectWord.s
+	@echo ... interpreter.obj
+	@echo ... interpreter.i
+	@echo ... interpreter.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

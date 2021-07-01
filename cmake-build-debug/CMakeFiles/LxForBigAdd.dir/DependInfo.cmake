@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/rakun/CLionProjects/LxForBigAdd/checkKeyword.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/checkKeyword.c.obj"
   "C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
+  "C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
   "C:/Users/rakun/CLionProjects/LxForBigAdd/main.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

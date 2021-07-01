@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 #include "detectWord.h"
 #include "checkKeyword.h"
@@ -16,9 +17,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
     int size = 0;
     int lineLen = strlen(line);
     int point = 0;
-
     FILE *lxFile;
-
     for (int i = 0; i < lineLen; ++i) {
 
         // STRING CHECKER
@@ -55,27 +54,45 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
 
         // WORD CHECKER
 
-
         if (line[i] == ' ' || line[i] == '.' || line[i] == '\n' || line[i] == ',' || line[i] == '\t' ) {
             word[i - size] = '\0';
+
+            if (isdigit(word[i - size - 1]) && line[i] == '.' && i + 1 != lineLen) {
+                printf("%s", "UNSUPPORTED INTEGER FORMAT DETECTED at line: ");
+                printf("%d\n", lineNum);
+                printf("%s\n", "The line: ");
+                printf("%s\n", line);
+                printf("Press enter to exit...\n");
+                getchar();
+                exit(1);
+            }
+
             for (int j = 0; j < strlen(word); ++j) {
                 if(isascii(word[j]) == 0 ){
                     printf("%s", "NON ASCII CHAR DETECTED at line: ");
                     printf("%d\n", lineNum);
                     printf("%s\n", "The line: ");
                     printf("%s", line);
-                    printf("%s\n", "And the detected word is: ");
+                    printf("\n%s\n", "And the detected word is: ");
                     printf("%s\n\n", word);
-                    break;
+                    printf("Press enter to exit...\n");
+                    getchar();
+                    exit(1);
                 }
             }
 
             if (strlen(word) > 20){
-                printf("%s", "IDENTIFIER NAME TOO LONG at line: ");
+                printf("%s", "IDENTIFIER NAME OR DIGIT NAME TOO LONG at line: ");
                 printf("%d\n", lineNum);
                 printf("%s\n", "The line: ");
                 printf("%s\n", line);
+                printf("\n%s\n", "And the detected word is: ");
+                printf("%s\n\n", word);
+                printf("Press enter to exit...\n");
+                getchar();
+                exit(1);
             }
+
             if (checkKeyword(word, fileName)) {
                 lxFile = fopen(fileName, "a");
                 if (isalpha(word[0])) {
@@ -104,6 +121,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
                     fprintf(lxFile, "%s\n", word);
                     fclose(lxFile);
                 }
+
             }
             size = i + 1;
         }
@@ -135,6 +153,9 @@ int stringChecker(int inString, char line[], int point, int lineNum){
             printf("%d\n", lineNum);
             printf("%s\n", "The line: ");
             printf("%s\n",line);
+            printf("Press enter to exit...\n");
+            getchar();
+            exit(1);
         }
         return inString = 1;
     }

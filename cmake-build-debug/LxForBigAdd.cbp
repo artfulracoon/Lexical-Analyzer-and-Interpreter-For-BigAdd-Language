@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.h">
 			<Option target="LxForBigAdd"/>
 		</Unit>
+		<Unit filename="C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.c">
+			<Option target="LxForBigAdd"/>
+		</Unit>
+		<Unit filename="C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.h">
+			<Option target="LxForBigAdd"/>
+		</Unit>
 		<Unit filename="C:/Users/rakun/CLionProjects/LxForBigAdd/main.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>

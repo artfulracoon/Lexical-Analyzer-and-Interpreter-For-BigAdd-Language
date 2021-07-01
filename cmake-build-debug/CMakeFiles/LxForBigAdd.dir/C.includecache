@@ -6,19 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rakun/CLionProjects/LxForBigAdd/checkKeyword.h
-
-C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.c
+C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.c
+interpreter.h
+C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.h
 stdio.h
 -
 string.h
 -
-ctype.h
+stdlib.h
 -
-detectWord.h
-C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.h
-checkKeyword.h
-C:/Users/rakun/CLionProjects/LxForBigAdd/checkKeyword.h
 
-C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.h
+C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.h
 

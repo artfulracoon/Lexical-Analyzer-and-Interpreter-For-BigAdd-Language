@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include "detectWord.h"
+#include "interpreter.h"
 
 int main() {
 
@@ -27,7 +28,23 @@ int main() {
     int *pInString = &inString;
 
     printf("%s", ">");
-    fgets(fileNameInput, 255, stdin);
+
+
+
+
+
+
+
+    //fgets(fileNameInput, 255, stdin);
+    strcpy(fileNameInput, "la test\n");
+
+
+
+
+
+
+
+
     char word[255];
     int size = 0;
     for (int i = 0; i < strlen(fileNameInput); ++i) {
@@ -94,16 +111,28 @@ int main() {
 
     if (*pInLoop) {
         printf("\n%s\n", "LOOP DID NOT END BUT THE FILE ENDED");
+        printf("Press enter to exit...\n");
+        getchar();
+        exit(1);
     }
 
     if (*pInComment) {
         printf("\n%s\n", "COMMENT DID NOT END BUT THE FILE ENDED");
+        printf("Press enter to exit...\n");
+        getchar();
+        exit(1);
     }
 
     if (*pInString) {
         printf("\n%s\n", "STRING DID NOT END BUT THE FILE ENDED");
+        printf("Press enter to exit...\n");
+        getchar();
+        exit(1);
     }
-    printf("\n%s", "Lexical analysis complete.\n");
+
+    interpreter(file_lx);
+
+
     printf("\n%s", "The program has ended. Press enter to exit...\n");
     getchar();
     exit(0);
