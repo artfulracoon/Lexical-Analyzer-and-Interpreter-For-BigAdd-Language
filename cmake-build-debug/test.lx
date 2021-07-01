@@ -1,6 +1,13 @@
 Keyword int
 Identifier size
 EndOfLine
-Keyword int
-Identifier x
+Keyword move
+IntConstant 5
+Keyword to
+Identifier size
+EndOfLine
+Keyword add
+IntConstant 5
+Keyword to
+Identifier size
 EndOfLine

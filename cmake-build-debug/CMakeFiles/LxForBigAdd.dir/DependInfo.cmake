@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/rakun/CLionProjects/LxForBigAdd/checkKeyword.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/checkKeyword.c.obj"
-  "C:/Users/rakun/CLionProjects/LxForBigAdd/detectWord.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
-  "C:/Users/rakun/CLionProjects/LxForBigAdd/interpreter.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
-  "C:/Users/rakun/CLionProjects/LxForBigAdd/main.c" "C:/Users/rakun/CLionProjects/LxForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/main.c.obj"
+  "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/checkKeyword.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/checkKeyword.c.obj"
+  "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
+  "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
+  "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

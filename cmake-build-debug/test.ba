@@ -1,2 +1,3 @@
 int size.
-int x.
+move 5 to size.
+add 5 to size.
