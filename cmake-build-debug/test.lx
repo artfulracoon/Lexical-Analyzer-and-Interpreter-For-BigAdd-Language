@@ -11,3 +11,13 @@ IntConstant 5
 Keyword to
 Identifier size
 EndOfLine
+Keyword sub
+IntConstant 5
+Keyword from
+Identifier size
+EndOfLine
+Keyword out
+StringConstant "the value is: 
+Separator
+Identifier size
+EndOfLine

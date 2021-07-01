@@ -104,7 +104,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
 
             if (line[i] == ','){
                 lxFile = fopen(fileName, "a");
-                fprintf(lxFile, "%s\n", "Seperator");
+                fprintf(lxFile, "%s\n", "Separator");
                 fclose(lxFile);
             }
 

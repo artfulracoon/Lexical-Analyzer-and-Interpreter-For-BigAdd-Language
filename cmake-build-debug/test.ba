@@ -1,3 +1,5 @@
 int size.
 move 5 to size.
 add 5 to size.
+sub 5 from size.
+out "the value is: ", size.

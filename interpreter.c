@@ -14,6 +14,7 @@ int assignment(char line[], FILE *lxFile);
 
 int addition(char line[], FILE *lxFile);
 
+int subtraction(char line[], FILE *lxFile);
 
 
 char variables[100][100];
@@ -49,13 +50,60 @@ int detectWordInterpreter(char line[], FILE *lxFile) {
         } else if (!strcmp(word2, "add")) {
             addition(line,lxFile);
         } else if (!strcmp(word2, "sub")) {
-
+            subtraction(line, lxFile);
         } else if (!strcmp(word2, "out")) {
 
         }
 
     }
 
+    return 0;
+}
+
+int subtraction(char line[], FILE *lxFile){
+    char int_value;
+    fgets(line, 255, lxFile);
+    char *word1 = wordSeparator(line, 0);
+    if(strcmp(word1, "Identifier") && strcmp(word1, "IntConstant")){
+        printf(" %s", "After sub Keyword, An IDENTIFIER or INTCONSTANT must follow!");
+        exit(1);
+    }
+    if(!strcmp(word1, "IntConstant")){
+        strcpy(&int_value, wordSeparator(line, strlen(word1) + 1));
+    } else{
+        char *word2_1 = wordSeparator(line, strlen(word1) + 1);
+        for (int i = 0; i < varIndex; ++i) {
+            if(!strcmp((const char *) &variables[i], word2_1)){
+                int_value = (char) varValues[i];
+                break;
+            }
+        }
+    }
+    fgets(line, 255, lxFile);
+    char *word3 = wordSeparator(line, 0);
+    if(strcmp(word3, "Keyword")){
+        printf(" %s", "After INTCONSTANT OR IDENTIFIER, Keyword FROM must follow!");
+        exit(1);
+    }
+    char *word4 = wordSeparator(line, strlen(word3) + 1);
+    if(strcmp(word4, "from")) {
+        printf(" %s", "After INTCONSTANT OR IDENTIFIER, Keyword FROM must follow!");
+        exit(1);
+    }
+    fgets(line, 255, lxFile);
+    char *word5 = wordSeparator(line, 0);
+    if(strcmp(word5, "Identifier")){
+        printf(" %s", "After FROM Keyword, an IDENTIFIER must follow!");
+        exit(1);
+    }
+    char *var_name = wordSeparator(line, strlen(word5) + 1);
+    for (int i = 0; i < varIndex; ++i) {
+        if(!strcmp((const char *) &variables[i], var_name)){
+            int value = int_value - '0';
+            varValues[i] = varValues[i] - value;
+            break;
+        }
+    }
     return 0;
 }
 
@@ -103,7 +151,6 @@ int addition(char line[], FILE *lxFile){
             break;
         }
     }
-    int value2 = varValues[0];
     return 0;
 }
 
