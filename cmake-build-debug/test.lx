@@ -9,29 +9,30 @@ IntConstant 5
 Keyword to
 Identifier size
 EndOfLine
-Keyword add
+Keyword loop
 Identifier size
-Keyword to
-Identifier sum
-EndOfLine
-Keyword add
-IntConstant 45
-Keyword to
-Identifier size
-EndOfLine
-Keyword sub
-IntConstant 10
-Keyword from
-Identifier size
-EndOfLine
+Keyword times
+OpenBlock
 Keyword out
 Identifier size
 Separator
 Keyword newline
-Separator
+EndOfLine
+Keyword sub
+IntConstant 1
+Keyword from
+Identifier size
+EndOfLine
+Keyword add
+Identifier size
+Keyword to
 Identifier sum
-Separator
+EndOfLine
+CloseBlock
+Keyword out
 Keyword newline
 Separator
-StringConstant "ALLLLLAAAAHHHH
+StringConstant "Sum:"
+Separator
+Identifier sum
 EndOfLine

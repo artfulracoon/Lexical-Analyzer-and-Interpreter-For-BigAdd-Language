@@ -4,11 +4,11 @@
 #include <stdlib.h>
 
 
-int detectWordInterpreter();
-
-int declaration();
+int detectWordInterpreter(char line[], FILE *lxFile, char fileName[]);
 
 char *wordSeparator(char line[], int index);
+
+int declaration(char line[], FILE *lxFile);
 
 int assignment(char line[], FILE *lxFile);
 
@@ -18,6 +18,7 @@ int subtraction(char line[], FILE *lxFile);
 
 int printOut(char line[], FILE *lxFile);
 
+int loop(char line[], FILE *lxFile, char fileName[]);
 
 char variables[100][100];
 int varIndex = 0;
@@ -33,12 +34,12 @@ int interpreter(char fileName[]) {
         if (fgets(line, 255, lxFile) == NULL) {
             break;
         }
-        detectWordInterpreter(line, lxFile);
+        detectWordInterpreter(line, lxFile, fileName);
     }
     return 0;
 }
 
-int detectWordInterpreter(char line[], FILE *lxFile) {
+int detectWordInterpreter(char line[], FILE *lxFile, char fileName[]) {
     char *word1 = wordSeparator(line, 0);
 
     if (!strcmp(word1, "Keyword")) {
@@ -55,10 +56,130 @@ int detectWordInterpreter(char line[], FILE *lxFile) {
             subtraction(line, lxFile);
         } else if (!strcmp(word2, "out")) {
             printOut(line, lxFile);
+        } else if (!strcmp(word2, "loop")) {
+            loop(line, lxFile, fileName);
         }
-
     }
 
+    return 0;
+}
+
+int loop(char line[], FILE *lxFile, char fileName[]) {
+    char *int_value = malloc(100);
+    fgets(line, 255, lxFile);
+    char *word1 = wordSeparator(line, 0);
+    if (strcmp(word1, "Identifier") && strcmp(word1, "IntConstant")) {
+        printf(" %s", "After loop Keyword, An IDENTIFIER or INTCONSTANT must follow!");
+        exit(1);
+    }
+    if (!strcmp(word1, "IntConstant")) {
+        int_value = wordSeparator(line, strlen(word1) + 1);
+    } else {
+        char *word2_1 = wordSeparator(line, strlen(word1) + 1);
+        for (int i = 0; i < varIndex; ++i) {
+            if (!strcmp((const char *) &variables[i], word2_1)) {
+                char *str = malloc(100);
+                sprintf(str, "%d", varValues[i]);
+                strcpy(int_value, str);
+                break;
+            }
+        }
+    }
+    fgets(line, 255, lxFile);
+    char *word3 = wordSeparator(line, 0);
+    char *word4 = wordSeparator(line, strlen(word3) + 1);
+    if (strcmp(word3, "Keyword") && strcmp(word4, "times")) {
+        printf(" %s", "times Keyword not used properly!");
+        exit(1);
+    }
+    fgets(line, 255, lxFile);
+    char *word5 = wordSeparator(line, 0);
+    char *startingLine = malloc(25);
+    if (!strcmp(word5, "OpenBlock")) {
+        char *word6 = "CloseBlock";
+        fgets(line, 255, lxFile);
+        strcpy(startingLine, line);
+        for (int i = 0; i < atoi(int_value); ++i) {
+            fgets(line, 255, lxFile);
+            if (!strcmp(word6, "CloseBlock")) {
+                fclose(lxFile);
+                lxFile = fopen(fileName, "r");
+                while (strcmp("OpenBlock", line) && strcmp("OpenBlock\n", line)){
+                    fgets(line, 255, lxFile);
+                }
+                while (strcmp(startingLine, line)) {
+                    fgets(line, 255, lxFile);
+                }
+                word6 = wordSeparator(line, 0);
+            }
+
+            while (strcmp(word6, "CloseBlock")) {
+                word6 = wordSeparator(line, 0);
+                if (!strcmp(word6, "Keyword")) {
+                    word6 = wordSeparator(line, strlen(word6) + 1);
+                }
+                if (!strcmp(word6, "int")) {
+                    declaration(line, lxFile);
+                } else if (!strcmp(word6, "move")) {
+                    assignment(line, lxFile);
+                } else if (!strcmp(word6, "add")) {
+                    addition(line, lxFile);
+                } else if (!strcmp(word6, "sub")) {
+                    subtraction(line, lxFile);
+                } else if (!strcmp(word6, "out")) {
+                    printOut(line, lxFile);
+                } else if (!strcmp(word6, "loop")) {
+                    loop(line, lxFile, fileName);
+                } else {
+                    if(!strcmp(word6, "CloseBlock")){
+                        continue;
+                    }
+                    fgets(line, 255, lxFile);
+                }
+
+            }
+        }
+
+    } else {
+        strcpy(startingLine, line);
+        char *word6 = wordSeparator(line, 0);
+        for (int i = 0; i < atoi(int_value); ++i) {
+
+            if(!strcmp(word6, "EndOfLine")){
+                fclose(lxFile);
+                lxFile = fopen(fileName, "r");
+                while (strcmp(startingLine, line)) {
+                    fgets(line, 255, lxFile);
+                }
+                word6 = wordSeparator(line, 0);
+            }
+
+            while (strcmp(word6, "EndOfLine")) {
+                word6 = wordSeparator(line, 0);
+                if (!strcmp(word6, "Keyword")) {
+                    word6 = wordSeparator(line, strlen(word6) + 1);
+                }
+                if (!strcmp(word6, "int")) {
+                    declaration(line, lxFile);
+                } else if (!strcmp(word6, "move")) {
+                    assignment(line, lxFile);
+                } else if (!strcmp(word6, "add")) {
+                    addition(line, lxFile);
+                } else if (!strcmp(word6, "sub")) {
+                    subtraction(line, lxFile);
+                } else if (!strcmp(word6, "out")) {
+                    printOut(line, lxFile);
+                } else if (!strcmp(word6, "loop")) {
+                    loop(line, lxFile, fileName);
+                }else {
+                    if(!strcmp(word6, "EndOfLine")){
+                        continue;
+                    }
+                    fgets(line, 255, lxFile);
+                }
+            }
+        }
+    }
     return 0;
 }
 
@@ -74,7 +195,7 @@ int printOut(char line[], FILE *lxFile) {
             continue;
         } else if (strcmp(word1, "Keyword") && strcmp(word1, "IntConstant") && strcmp(word1, "StringConstant") &&
                    strcmp(word1, "Identifier")) {
-            printf(" %s", "After sub Keyword, An IDENTIFIER or INTCONSTANT must follow!");
+            printf("%s", "After sub Keyword, An IDENTIFIER or INTCONSTANT must follow!");
             exit(1);
         } else {
             word2 = wordSeparator(line, strlen(word1) + 1);
@@ -82,23 +203,26 @@ int printOut(char line[], FILE *lxFile) {
 
         if (!strcmp(word1, "StringConstant")) {
             int indexLocal = strlen(word1) + 2;
-            while (strcmp(word2, "")) {
-                strcpy(word2, wordSeparator(line, indexLocal));
-                printf("%s ", word2);
-                indexLocal += strlen(word2) + 1;
+            char char1;
+            while(1) {
+                char1 = line[indexLocal];
+                if(char1 == '\"')
+                    break;
+                printf("%c", char1);
+                indexLocal += 1;
             }
         } else if (!strcmp(word1, "IntConstant")) {
-            printf("%s ", word2);
+            printf("%s", word2);
         } else if (!strcmp(word1, "Keyword")) {
             if (strcmp(word2, "newline")) {
-                printf(" %s", "Only newline keyword can be used as a keyword while printing to console!");
+                printf("%s", "Only newline keyword can be used as a keyword while printing to console!");
                 exit(1);
             }
             printf("\n");
         } else if (!strcmp(word1, "Identifier")) {
             for (int i = 0; i < varIndex; ++i) {
                 if (!strcmp((const char *) &variables[i], word2)) {
-                    printf("%d ", varValues[i]);
+                    printf("%d", varValues[i]);
                 }
             }
         } else if (!strcmp(word1, "Separator")) {
@@ -108,6 +232,7 @@ int printOut(char line[], FILE *lxFile) {
         fgets(line, 255, lxFile);
         word1 = wordSeparator(line, 0);
     }
+    printf("\n");
     return 0;
 }
 
@@ -125,7 +250,7 @@ int subtraction(char line[], FILE *lxFile) {
         char *word2_1 = wordSeparator(line, strlen(word1) + 1);
         for (int i = 0; i < varIndex; ++i) {
             if (!strcmp((const char *) &variables[i], word2_1)) {
-                char * str = malloc(100);
+                char *str = malloc(100);
                 sprintf(str, "%d", varValues[i]);
                 strcpy(int_value, str);
                 break;
@@ -173,7 +298,7 @@ int addition(char line[], FILE *lxFile) {
         char *word2_1 = wordSeparator(line, strlen(word1) + 1);
         for (int i = 0; i < varIndex; ++i) {
             if (!strcmp((const char *) &variables[i], word2_1)) {
-                char * str = malloc(100);
+                char *str = malloc(100);
                 sprintf(str, "%d", varValues[i]);
                 strcpy(int_value, str);
                 break;

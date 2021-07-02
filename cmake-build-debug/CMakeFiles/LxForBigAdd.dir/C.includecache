@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c
 interpreter.h
-C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
 stdio.h
 -
 string.h
@@ -16,5 +16,5 @@ string.h
 stdlib.h
 -
 
-C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
 

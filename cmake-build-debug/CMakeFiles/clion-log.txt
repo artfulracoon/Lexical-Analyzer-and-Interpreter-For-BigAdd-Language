@@ -1,5 +1,5 @@
-"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\rakun\Documents\GitHub\LexicalAnalyzerForBigAdd
--- The C compiler identification is GNU 4.8.3
+"D:\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\dgkna\Documents\GitHub\LexicalAnalyzerForBigAdd
+-- The C compiler identification is GNU 6.3.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe - skipped
@@ -7,4 +7,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug
+-- Build files have been written to: C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug

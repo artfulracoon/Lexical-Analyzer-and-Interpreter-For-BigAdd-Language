@@ -33,7 +33,8 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
             word[i-size] = '\0';
             lxFile = fopen(fileName, "a");
             fprintf(lxFile, "%s", "StringConstant ");
-            fprintf(lxFile, "%s\n", word);
+            fprintf(lxFile, "%s", word);
+            fprintf(lxFile, "%s\n", "\"");
             fclose(lxFile);
             size = i + 1;
             continue;
@@ -139,6 +140,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
         lxFile = fopen(fileName, "a");
         fprintf(lxFile, "%s", "StringConstant ");
         fprintf(lxFile, "%s", word);
+        fprintf(lxFile, "%s\n", "\"");
         fclose(lxFile);
     }
     return 0;
