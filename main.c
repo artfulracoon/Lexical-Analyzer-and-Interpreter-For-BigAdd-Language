@@ -27,23 +27,8 @@ int main() {
     int inString = 0;
     int *pInString = &inString;
 
-    printf("%s", ">");
-
-
-
-
-
-
-
     //fgets(fileNameInput, 255, stdin);
     strcpy(fileNameInput, "la test\n");
-
-
-
-
-
-
-
 
     char word[255];
     int size = 0;
@@ -85,8 +70,6 @@ int main() {
         getchar();
         exit(1);
     }
-    printf("%s", file_ba);
-    printf("%s\n\n", " is found.");
 
     if ((lxFile = fopen(file_lx, "w")) == NULL) {
         // Gives error if the file specified could not be opened.
@@ -95,8 +78,6 @@ int main() {
         getchar();
         exit(1);
     }
-    printf("%s", file_lx);
-    printf("%s\n\n", " is created successfully.");
     fclose(lxFile); // We opened the .lx file in write mode and closed it so it will start anew everytime.
 
     while (!feof(baFile)) {

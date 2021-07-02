@@ -1,5 +1,7 @@
 int size.
+int sum.
 move 5 to size.
-add 5 to size.
-sub 5 from size.
-out "the value is: ", size.
+add size to sum.
+add 45 to size. 
+sub 10 from size.
+out size, newline, sum, newline, "ALLLLLAAAAHHHH".

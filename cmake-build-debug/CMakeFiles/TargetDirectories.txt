@@ -1,3 +1,3 @@
-C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir
-C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir
+C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/rebuild_cache.dir

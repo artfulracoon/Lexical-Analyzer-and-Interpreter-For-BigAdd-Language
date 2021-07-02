@@ -8,94 +8,96 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LxForBigAdd">
-				<Option output="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/LxForBigAdd.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
+				<Option output="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/LxForBigAdd.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 LxForBigAdd"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 LxForBigAdd"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LxForBigAdd/fast">
-				<Option output="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/LxForBigAdd.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
+				<Option output="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/LxForBigAdd.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/i686-w64-mingw32/4.8.3/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 LxForBigAdd/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 LxForBigAdd/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
+				<Option working_dir="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/checkKeyword.c">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/checkKeyword.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/checkKeyword.h">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/checkKeyword.h">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.c">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.h">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.h">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>
-		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/CMakeLists.txt">
+		<Unit filename="C:/Users/rakun/Documents/GitHub/LexicalAnalyzerForBigAdd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,23 +1,37 @@
 Keyword int
 Identifier size
 EndOfLine
+Keyword int
+Identifier sum
+EndOfLine
 Keyword move
 IntConstant 5
 Keyword to
 Identifier size
 EndOfLine
 Keyword add
-IntConstant 5
+Identifier size
+Keyword to
+Identifier sum
+EndOfLine
+Keyword add
+IntConstant 45
 Keyword to
 Identifier size
 EndOfLine
 Keyword sub
-IntConstant 5
+IntConstant 10
 Keyword from
 Identifier size
 EndOfLine
 Keyword out
-StringConstant "the value is: 
-Separator
 Identifier size
+Separator
+Keyword newline
+Separator
+Identifier sum
+Separator
+Keyword newline
+Separator
+StringConstant "ALLLLLAAAAHHHH
 EndOfLine
