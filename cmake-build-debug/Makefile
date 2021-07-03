@@ -249,6 +249,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/main.c.s
 .PHONY : main.c.s
 
+operations.obj: operations.c.obj
+
+.PHONY : operations.obj
+
+# target to build an object file
+operations.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/operations.c.obj
+.PHONY : operations.c.obj
+
+operations.i: operations.c.i
+
+.PHONY : operations.i
+
+# target to preprocess a source file
+operations.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/operations.c.i
+.PHONY : operations.c.i
+
+operations.s: operations.c.s
+
+.PHONY : operations.s
+
+# target to generate assembly for a file
+operations.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LxForBigAdd.dir\build.make CMakeFiles/LxForBigAdd.dir/operations.c.s
+.PHONY : operations.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -270,6 +297,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... operations.obj
+	@echo ... operations.i
+	@echo ... operations.s
 .PHONY : help
 
 

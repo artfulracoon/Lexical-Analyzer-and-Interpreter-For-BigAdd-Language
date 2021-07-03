@@ -5,7 +5,7 @@
 #include "detectWord.h"
 #include "interpreter.h"
 
-int main(int argc, char *argv[]) {
+int main() {
 
     FILE *lxFile; // .lx file pointer.
     FILE *baFile; // .ba file pointer.
@@ -13,19 +13,6 @@ int main(int argc, char *argv[]) {
     char line[255]; //  The line that was read from the file.
 
     char fileNameInput[255];
-
-    if (argc == 2){
-        strcpy(fileNameInput, argv[1]);
-    }
-
-    else{
-        printf("%s", "Parameter problem occured!\nGiven parameter number: ");
-        printf("%d", argc-1);
-        printf("%s", "\nExpected: 1\nPress enter to exit...");
-        getchar();
-        exit(1);
-    }
-
     char file_lx[255];
     char file_ba[255];
 
@@ -40,16 +27,35 @@ int main(int argc, char *argv[]) {
     int inString = 0;
     int *pInString = &inString;
 
+    //fgets(fileNameInput, 255, stdin);
+    strcpy(fileNameInput, "la test\n");
+
     char word[255];
     int size = 0;
     for (int i = 0; i < strlen(fileNameInput); ++i) {
-
-        if (i+1 == strlen(fileNameInput)) {
-            word[i+1] = '\0';
+        if (fileNameInput[i] == ' ' || fileNameInput[i] == '\n'){
+            word[i-size] ='\0';
+            if (size == 0 && strcmp(word, "la")){
+                printf("%s", "la KEYWORD NOT USED!\n");
+                printf("Press enter to exit...\n");
+                getchar();
+                exit(1);
+            }
+            if (size != 0){
+                break;
+            }
+            size = i + 1;
         }
 
         word[i-size] = fileNameInput[i];
+        if (i == strlen(fileNameInput)-1 && size == 0){
+            printf("%s", "la KEYWORD NOT USED!\n");
+            printf("Press enter to exit...\n");
+            getchar();
+            exit(1);
+        }
     }
+
 
     strcpy(file_lx, word);
     strcat(file_lx, ".lx");

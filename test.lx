@@ -1,0 +1,22 @@
+Keyword int
+Identifier size
+EndOfLine
+Keyword loop
+IntConstant 5
+Keyword times
+OpenBlock
+Keyword out
+Keyword newline
+EndOfLine
+Keyword loop
+IntConstant 6
+Keyword times
+OpenBlock
+Keyword out
+StringConstant "*"
+EndOfLine
+CloseBlock
+Keyword out
+StringConstant "X"
+EndOfLine
+CloseBlock

@@ -1,9 +1,13 @@
-int size.
-int sum.
-move 5 to size.
-loop size times
-[ out size, newline.
-sub 1 from size.
-add size to sum.
+int k.
+int n.
+int i.
+move 0 to i.
+move 5 to n.
+move 4 to k.
+loop n times [
+loop k times out " ".
+sub 1 from k.
+add 1 to i.
+loop i times out "* ".
+add 1 to i.
 ]
-out newline, "Sum:", sum.

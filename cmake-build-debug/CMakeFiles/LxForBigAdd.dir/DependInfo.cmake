@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
   "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
   "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/main.c.obj"
+  "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.c" "C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/cmake-build-debug/CMakeFiles/LxForBigAdd.dir/operations.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

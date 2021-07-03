@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LxForBigAdd.dir/detectWord.c.obj"
   "CMakeFiles/LxForBigAdd.dir/interpreter.c.obj"
   "CMakeFiles/LxForBigAdd.dir/main.c.obj"
+  "CMakeFiles/LxForBigAdd.dir/operations.c.obj"
   "LxForBigAdd.exe"
   "LxForBigAdd.exe.manifest"
   "LxForBigAdd.pdb"

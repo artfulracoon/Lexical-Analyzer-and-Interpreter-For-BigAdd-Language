@@ -10,8 +10,13 @@ CMakeFiles/LxForBigAdd.dir/detectWord.c.obj: ../detectWord.h
 
 CMakeFiles/LxForBigAdd.dir/interpreter.c.obj: ../interpreter.c
 CMakeFiles/LxForBigAdd.dir/interpreter.c.obj: ../interpreter.h
+CMakeFiles/LxForBigAdd.dir/interpreter.c.obj: ../operations.h
 
 CMakeFiles/LxForBigAdd.dir/main.c.obj: ../detectWord.h
 CMakeFiles/LxForBigAdd.dir/main.c.obj: ../interpreter.h
 CMakeFiles/LxForBigAdd.dir/main.c.obj: ../main.c
+
+CMakeFiles/LxForBigAdd.dir/operations.c.obj: ../interpreter.h
+CMakeFiles/LxForBigAdd.dir/operations.c.obj: ../operations.c
+CMakeFiles/LxForBigAdd.dir/operations.c.obj: ../operations.h
 

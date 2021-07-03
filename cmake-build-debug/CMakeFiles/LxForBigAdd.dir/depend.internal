@@ -11,7 +11,12 @@ CMakeFiles/LxForBigAdd.dir/detectWord.c.obj
 CMakeFiles/LxForBigAdd.dir/interpreter.c.obj
  C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c
  C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
+ C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.h
 CMakeFiles/LxForBigAdd.dir/main.c.obj
  C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.h
  C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
  C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c
+CMakeFiles/LxForBigAdd.dir/operations.c.obj
+ C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
+ C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.c
+ C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.h

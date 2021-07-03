@@ -183,18 +183,18 @@ int loopChecker(int inLoop, char currentChar, char line[], int lineNum, char fil
         printf("%s\n", line);
     }
 
-    if (inLoop && currentChar == ']') {
+    if (currentChar == ']') {
         // if currently in loop and char is loop closer
         fprintf(lxFile, "%s\n", "CloseBlock");
         fclose(lxFile);
-        return inLoop = 0;
+        return inLoop -= 1;
     }
 
-    if (inLoop == 0 && currentChar == '[') {
+    if (currentChar == '[') {
         // if currently not in loop and char is loop starter
         fprintf(lxFile, "%s\n", "OpenBlock");
         fclose(lxFile);
-        return inLoop = 1;
+        return inLoop += 1;
     }
 
     return inLoop;

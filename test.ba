@@ -1,0 +1,8 @@
+int size.
+loop 5 times [
+out newline.
+loop 6 times [
+out "*".
+]
+out "X".
+]

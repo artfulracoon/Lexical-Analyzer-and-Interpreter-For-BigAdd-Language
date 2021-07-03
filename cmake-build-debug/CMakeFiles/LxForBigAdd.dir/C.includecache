@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.c
-interpreter.h
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.h
+
 C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
+
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c
 stdio.h
--
-string.h
 -
 stdlib.h
 -
-
+string.h
+-
+detectWord.h
+C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/detectWord.h
+interpreter.h
 C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/interpreter.h
 

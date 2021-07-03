@@ -95,6 +95,12 @@
 		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/main.c">
 			<Option target="LxForBigAdd"/>
 		</Unit>
+		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.c">
+			<Option target="LxForBigAdd"/>
+		</Unit>
+		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/operations.h">
+			<Option target="LxForBigAdd"/>
+		</Unit>
 		<Unit filename="C:/Users/dgkna/Documents/GitHub/LexicalAnalyzerForBigAdd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
