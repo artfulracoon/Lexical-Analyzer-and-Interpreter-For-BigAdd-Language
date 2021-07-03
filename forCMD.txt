@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
-    //interpreter(file_lx);
+    interpreter(file_lx);
 
 
     printf("\n%s", "The program has ended. Press enter to exit...\n");

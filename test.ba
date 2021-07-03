@@ -1,8 +1,9 @@
 int size.
-loop 5 times [
-out newline.
-loop 6 times [
-out "*".
+int sum.
+move 5 to size.
+loop size times {ignore me, I am a comment} [ 
+out size, newline.
+sub 1 from size.
+add size to sum.
 ]
-out "X".
-]
+out newline, "Sum:", sum.

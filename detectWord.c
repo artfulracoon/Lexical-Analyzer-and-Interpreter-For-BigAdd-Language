@@ -8,7 +8,7 @@
 
 int trueDigits(char digit[]);
 
-int commentChecker(int inComment, char currentChar, char line[], int lineNum);
+int commentChecker(int inComment, char currentChar, char line[], int lineNum, char word[]);
 int stringChecker(int inString, char line[], int point, int lineNum);
 int loopChecker(int inLoop, char currentChar, char line[], int lineNum, char fileName[]);
 
@@ -41,7 +41,7 @@ int detectKeyword(char line[], int *inLoop, int *inComment, int *inString, int l
         }
 
         // COMMENT CHECKER
-        *inComment = commentChecker(*inComment, line[i], line, lineNum);
+        *inComment = commentChecker(*inComment, line[i], line, lineNum, word);
         if (*inComment == 1) {
             continue;
         }
@@ -181,6 +181,9 @@ int loopChecker(int inLoop, char currentChar, char line[], int lineNum, char fil
         printf("%d\n", lineNum);
         printf("%s\n", "The line: ");
         printf("%s\n", line);
+        printf("Press enter to exit...\n");
+        getchar();
+        exit(1);
     }
 
     if (currentChar == ']') {
@@ -200,7 +203,7 @@ int loopChecker(int inLoop, char currentChar, char line[], int lineNum, char fil
     return inLoop;
 }
 
-int commentChecker(int inComment, char currentChar, char line[], int lineNum) {
+int commentChecker(int inComment, char currentChar, char line[], int lineNum, char word[]) {
 
     if (inComment && currentChar == '}') {
         // if currently in comment and char is comment closer
@@ -209,6 +212,7 @@ int commentChecker(int inComment, char currentChar, char line[], int lineNum) {
 
     if (inComment == 0 && currentChar == '{') {
         // if currently not in comment and char is comment starter
+        memset(word, 0, 255);
         return inComment = 1;
     }
 

@@ -1,56 +1,38 @@
 Keyword int
-Identifier k
+Identifier size
 EndOfLine
 Keyword int
-Identifier n
-EndOfLine
-Keyword int
-Identifier i
-EndOfLine
-Keyword move
-IntConstant 0
-Keyword to
-Identifier i
+Identifier sum
 EndOfLine
 Keyword move
 IntConstant 5
 Keyword to
-Identifier n
-EndOfLine
-Keyword move
-IntConstant 4
-Keyword to
-Identifier k
+Identifier size
 EndOfLine
 Keyword loop
-Identifier n
+Identifier size
 Keyword times
 OpenBlock
-Keyword loop
-Identifier k
-Keyword times
 Keyword out
-StringConstant " "
+Identifier size
+Separator
+Keyword newline
+EndOfLine
+Keyword add
+Identifier size
+Keyword to
+Identifier sum
 EndOfLine
 Keyword sub
 IntConstant 1
 Keyword from
-Identifier k
-EndOfLine
-Keyword add
-IntConstant 1
-Keyword to
-Identifier i
-EndOfLine
-Keyword loop
-Identifier i
-Keyword times
-Keyword out
-StringConstant "* "
-EndOfLine
-Keyword add
-IntConstant 1
-Keyword to
-Identifier i
+Identifier size
 EndOfLine
 CloseBlock
+Keyword out
+Keyword newline
+Separator
+StringConstant "Sum:"
+Separator
+Identifier sum
+EndOfLine
