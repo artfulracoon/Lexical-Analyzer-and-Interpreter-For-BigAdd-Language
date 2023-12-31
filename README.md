@@ -1,3 +1,5 @@
+Written in C, this project correctly lexical analyzes, interprets and runs code for a made-up language called bigAdd.
+
 The BigAdd Analyzer has 3 main parts:
 
 1. The first part is lexical analysis. The program analyzes the code and breaks it down to keywords.
